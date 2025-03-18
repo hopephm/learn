@@ -2,13 +2,13 @@ package kr.hope.learn.coroutine
 
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.test.runTest
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
 class HelloWorldTest {
     @Test
-    fun helloWorldTest() = runBlocking {
+    fun helloWorldTest() = runTest {
         // given
         val list: MutableList<String> = mutableListOf()
 
